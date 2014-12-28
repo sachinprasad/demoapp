@@ -1,6 +1,6 @@
 <div class="navbar-collapse collapse navbar-responsive-collapse">
   <ul class="nav navbar-nav">
-    <li><%= link_to 'Home',home_path %></li>
+    <li><%= link_to 'Home',home_path ,'data-no-turbolink' => true %></li>
   </ul>
    <p class="navbar-text navbar-right">
     <% if current_user %>
