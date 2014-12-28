@@ -1,0 +1,21 @@
+production: &defaults
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: demoapp_production
+  pool: 5
+  username: postgres
+  password: admin
+
+development:
+  <<: *defaults
+  database: demoapp_development
+
+test:
+  <<: *defaults
+  database: demoapp_test
+
+staging:
+  <<: *defaults
+  database: demoapp_staging
+
